@@ -1,0 +1,21 @@
+# Datos reales de entrada y salida
+/correos.xlsx
+/resultado_validacion*.xlsx
+/data/input/*.xlsx
+!/data/input/correos_modelo.xlsx
+/data/output/*
+!/data/output/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Variables de entorno
+.env
+.env.*
