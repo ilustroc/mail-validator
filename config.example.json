@@ -1,0 +1,8 @@
+{
+  "archivo_entrada": "data/input/correos.xlsx",
+  "archivo_salida": "data/output/resultado_validacion_correos.xlsx",
+  "hoja_entrada": 0,
+  "columna_documento": "DOCUMENTO",
+  "columna_correo": "CORREO",
+  "max_correos_por_documento": 4
+}

@@ -25,12 +25,20 @@ def validate_email_format(email: str) -> bool:
     return not any(invalid_rules)
 
 
+def validar_formato(email: str) -> bool:
+    return validate_email_format(email)
+
+
 def get_user(email: str) -> str:
     return email.split("@", 1)[0] if "@" in email else ""
 
 
 def get_domain(email: str) -> str:
     return email.split("@", 1)[1] if "@" in email else ""
+
+
+def obtener_dominio(email: str) -> str:
+    return get_domain(email)
 
 
 @lru_cache(maxsize=1024)

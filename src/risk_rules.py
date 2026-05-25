@@ -19,6 +19,10 @@ def detect_similar_domain(domain: str) -> str:
     return ""
 
 
+def detectar_dominio_parecido(domain: str) -> str:
+    return detect_similar_domain(domain)
+
+
 def is_temporary_domain(domain: str) -> bool:
     return domain in TEMPORARY_DOMAINS
 
@@ -41,6 +45,10 @@ def is_suspicious_user(user: str) -> bool:
         return vowels / len(letters_only) < 0.15
 
     return False
+
+
+def usuario_sospechoso(user: str) -> bool:
+    return is_suspicious_user(user)
 
 
 def classify_score(score: int) -> str:

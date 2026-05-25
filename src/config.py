@@ -8,6 +8,7 @@ OUTPUT_PATH = BASE_DIR / "data" / "output" / "resultado_validacion_correos.xlsx"
 
 EXPECTED_COLUMNS = ("DOCUMENTO", "CORREO")
 MAX_EMAILS_PER_DOCUMENT = 4
+DEFAULT_SHEET = 0
 
 KNOWN_DOMAINS = (
     "gmail.com",
